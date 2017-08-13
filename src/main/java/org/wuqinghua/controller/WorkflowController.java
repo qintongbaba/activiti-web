@@ -21,8 +21,8 @@ public class WorkflowController {
 	 * @return
 	 */
 	@RequestMapping(path = "/deployment", method = RequestMethod.POST)
-	public String deployment(String workflowName, @RequestParam CommonsMultipartFile workflowZip) {
-		System.out.println("workflowName:" + workflowName + " workflowZip:" + workflowZip.getOriginalFilename());
+	public String deployment(@RequestParam CommonsMultipartFile workflowZip) {
+		System.out.println("workflowZip:" + workflowZip.getOriginalFilename());
 		return "workflow/workflow";
 	}
 }
