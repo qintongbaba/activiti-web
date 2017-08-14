@@ -25,8 +25,7 @@ public class LoginController {
 		}
 		return "login";
 	}
-	
-	
+
 	@RequestMapping("/logout")
 	public String logout() {
 		loginService.logout();

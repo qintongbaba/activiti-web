@@ -84,4 +84,12 @@
 
 	<bean id="repositoryService" factory-bean="processEngine"
 		factory-method="getRepositoryService"></bean>
+	<bean id="runtimeService" factory-bean="processEngine"
+		factory-method="getRuntimeService"></bean>
+	<bean id="taskService" factory-bean="processEngine"
+		factory-method="getTaskService"></bean>
+	<bean id="formService" factory-bean="processEngine"
+		factory-method="getFormService"></bean>
+	<bean id="historyService" factory-bean="processEngine"
+		factory-method="getHistoryService"></bean>
 </beans>
